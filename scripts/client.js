@@ -1,4 +1,4 @@
-// Listen for form submit
+
 document.getElementById('myForm').addEventListener('submit', saveBookmark);
 
 // Save Bookmark
@@ -49,7 +49,7 @@ function saveBookmark(e){
 
   // Prevent form from submitting
   e.preventDefault();
-}
+}; // end saveBookmark()
 
 // Delete bookmark
 function deleteBookmark(url){
@@ -67,7 +67,7 @@ function deleteBookmark(url){
 
   // Re-fetch bookmarks
   fetchBookmarks();
-}
+}; // end deleteBookmark()
 
 // Fetch bookmarks
 function fetchBookmarks(){
@@ -89,14 +89,14 @@ function fetchBookmarks(){
                                   '</h3>'+
                                   '</div>';
   }
-}
+}; // end of fetchBookmarks()
 
 // Validate Form
 function validateForm(siteName, siteUrl){
   if(!siteName || !siteUrl){
     alert('Please fill in the form');
     return false;
-  }
+  };
 
   var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
   var regex = new RegExp(expression);
@@ -107,4 +107,4 @@ function validateForm(siteName, siteUrl){
   }
 
   return true;
-}
+}; // end validateForm()
