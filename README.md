@@ -1,10 +1,13 @@
 
 # LocalStorage Bookmarker App
+###### LocalStorage Bookmarker App can be viewed here: https://localstorage-bookmarker.herokuapp.com/
 
 ---
 
 ## Description
-###### Simple application for bookmarking webistes using ES6 localstorage.
+###### Simple application for bookmarking webistes using ES6 localstorage, HTML5, CSS3 and Javascript.
+
+---
 
 ## Technologies Used
   1. HTML5
